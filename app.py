@@ -194,5 +194,5 @@ async def health_check():
             content={"status": "unhealthy", "error": str(e), "api_key_set": bool(API_KEY)}
         )
 
-if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True) 
+# if __name__ == "__main__":
+#     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True) 
